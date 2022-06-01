@@ -92,15 +92,19 @@ body {
     font-weight: 900;
 }
 
-.title-button {
+.title-button,
+.banner-button {
     background-color: #3882F6;
-    border-color: #3882F6;
     color: #E5E7EB;
     font-weight: 700;
     font-size: 18px;
     width: 150px;
     height: 40px;
     border-radius: 8px;
+}
+
+.title-button {
+    border: solid 1px #3882F6;
 }
 
 /* body */
@@ -185,4 +189,36 @@ body {
     align-self: flex-end;
     font-size: 24px;
     font-weight: 700;
+}
+
+/* banner */
+
+.banner-container {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-color: #3882F6;
+    display: flex;
+    border-radius: 8px;
+    width: 65%;
+    height: 35%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.banner-button {
+    border: solid 1px #E5E7EB;
 }
