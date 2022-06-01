@@ -7,7 +7,8 @@
 
 body {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* header */
@@ -111,7 +112,7 @@ body {
 
 .body {
     display: flex;
-    flex: 1;
+    flex-grow: 1;
     flex-direction: column;
 }
 
@@ -166,7 +167,6 @@ body {
 
 .quote-container {
     display: flex;
-    flex: 1;
     align-items: center;
     background-color: #E5E7EB;
     justify-content: center;
@@ -198,6 +198,8 @@ body {
     height: 500px;
     justify-content: center;
     align-items: center;
+    margin: 100px;
+    flex: 1;
 }
 
 .banner {
@@ -221,4 +223,19 @@ body {
 
 .banner-button {
     border: solid 1px #E5E7EB;
+}
+
+/* footer */
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    color: #E5E7EB;
+    text-decoration: none;
 }
